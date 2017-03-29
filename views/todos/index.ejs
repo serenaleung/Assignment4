@@ -1,0 +1,12 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+
+<h1>Teams</h1>
+
+<% if(teams) { %>
+  <% for (let task of teams) { %>
+    <p><%= `${task}` %></p>
+  <% } %>
+<% } %>
+
+<%- include('../partials/footer') %>
